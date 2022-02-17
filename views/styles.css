@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-green: #1E3932;
+    --dark-green: #006241;
+    --secondary-green: #D4E9E2;
+    --third-green: #CDDDD9;
+    --bright-green: #DCF5B4;
+    --light-green: #EEEEE2;
+    --dark-grey: #4C4C4C;
+    --light-grey: #F0F0F0;
+    --green-hover: #39514B;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .header-container {
+    display: grid;
+    width: 100%;
+    height: 101px;
+    justify-content: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.header .header-container .items {
+    display: flex;
+    width: 940px;
+    height: auto;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    width: 843px;
+    height: auto;
+}
+
+.header-wrapper .menu-options {
+    display: flex;
+    width: 282px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.header-menu-right {
+    display: grid;
+    width: 100%;
+    justify-content: end;
+}
+
+.header-menu-right .account-info {
+    display: flex;
+    width: auto;
+    height: 100px;
+    align-items: center;
+}
+
+.account-info li a {
+    padding: 6px 15px 6px 15px;
+    margin: 0 10px 0 10px;
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.account-info li .singin {
+    color: var(--black);
+}
+
+.account-info li .join {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.cards {
+    margin-top: 32px;
+    display: grid;
+    row-gap: 35px;
+    grid-template-columns: repeat(2, minmax(512px, 720px));
+    grid-template-rows: minmax(375px, 625px);
+    height: auto;
+}
+
+.cards .card-mood {
+    background-color: var(--primary-green);
+    color: var(--white);
+    max-height: 625px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 32px 40px;
+    /* justify-self: center; */
+    /* align-self: stretch; */
+    /* display: grid;
+    grid-template-columns: 358px;
+    grid-template-rows: 125px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; */
+}
+
+.card-mood h2 {
+    font-size: 4.8rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border: 3px dashed rosybrown;
+}
+
+.card-mood p {
+    font-size: 2.7rem;
+    padding-bottom: 15px;
+}
+
+.card-mood a {
+    width: 222px;
+    padding: 6px 15px 6px 15px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards .card-img__coffee {
+    background-color: var(--primary-green);
+    max-width: 720px;
+    max-height: 625px;
+    background-image: url('https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-76036.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img__cellphone,
+.card-favorite,
+.card-delivery,
+.card-img__book,
+.card-img__credit,
+.card-bonus {
+    background-color: var(--secondary-green);
+}
+
+.card-img__barista,
+.card-mentions {
+    background-color: var(--third-green);
+}
+
+.card-img__cellphone {
+    margin-right: 16px;
+    height: 289px;
+    background-image: url('https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-76033.png');
+    background-position: center;
+    background-size: cover;
+    grid-row: 2 / 3;
+}
+
+.card-favorite {
+    height: 258px;
+    grid-row: 3 / 4;
+    margin-right: 16px;
+    margin-top: -35px;
+    color: var(--primary-green);
+    display: grid;
+    grid-template-rows: 40px 110px auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-favorite h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-favorite p {
+    padding: 0 42px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-favorite a {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-green);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img__bags {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url('https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-76034.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.card-delivery {
+    height: 258px;
+    margin-top: -35px;
+    color: var(--primary-green);
+    display: grid;
+    grid-template-rows: 40px 110px auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-delivery h3 {
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-delivery p {
+    padding: 30px 72px 0 72px ;
+    text-align: center;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+.card-delivery a {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-green);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img__credit {
+    height: 393px;
+    grid-row: 4 / 5;
+    background-image: url('https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-75418.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.card-bonus {
+    height: 393px;
+    color: var(--primary-green);
+    display: grid;
+    /* grid-template-rows: 40px 110px auto; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-bonus h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-bonus p {
+    padding: 0 42px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-bonus a {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-green);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-mentions {
+    padding: 0 40px;
+    grid-row: 5 / 6;
+    height: 393px;
+    display: grid;
+    /* grid-template-rows: 40px 110px auto; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-mentions h3 {
+    padding: 0 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-mentions p {
+    padding: 0 42px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-mentions a {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-img__barista {
+    height: 393px;
+    background-image: url('https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-76691.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.card-img__book {
+    height: 360px;
+    background-image: url('https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-76831.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-recommendations {
+    background-color: var(--dark-green);
+    color: var(--white);
+    display: grid;
+    /* grid-template-rows: 40px 110px auto; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-recommendations h3 {
+    padding: 0 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-recommendations p {
+    padding: 0 42px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-recommendations a {
+    font-size: 18px;
+    font-weight: bold;
+    width: auto;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    font-weight: bold;
+    text-align: center;
+}
+
+.conditions {
+    display: grid;
+    height: 280px;
+    align-items: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3)  ;
+}
+
+.conditions .text-1,
+.text-2 {
+    font-weight: 600;
+    text-align: center;
+    padding-left:  240px;
+    padding-right: 240px;
+    line-height: 30px;
+}
+
+.information nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-networks {
+    display: flex;
+}
+
+.aboutus-content {
+    display: flex;
+    flex-direction: column !important;
+}
