@@ -60,80 +60,35 @@ a {
 
 .menu-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    font-size: 2.6rem;
-    margin: 32px;
-    border-bottom: 2px solid var(--light-green);
+    font-size: 2.4rem;
 }
 
 .menu-container .menu a, a {
     color: var(--black);
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .menu-container .menu {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 16px;
-}
-
-.menu-container
-.rewards,
-.gift-card {
-    padding: 16px 0;
-}
-
-.wrapper-menu-container
-.menu-container
-.gift-card {
-    margin-bottom: 16px;
-}
-
-.wrapper-menu-container
-.account-store {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 32px;
-}
-
-.primary-button {
-    border: 1px solid var(--black);
-    border-radius: 25px;
-    padding: 7px 16px;
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-
-.wrapper-menu-container
-.account-store
-.register
-.signin {
-    margin-right: 16px;
-    background-color: var(--white);
-}
-
-.wrapper-menu-container
-.account-store
-.register
-.join {
-    color: var(--white);
-    background-color: var(--black);
-}
-
-.wrapper-menu-container
-.account-store
-.location {
-    display: flex;
     align-items: center;
-    margin-top: 20px;
+    height: 6rem;
+    padding-left: 26px;
+    background: #ffffff;
+    box-shadow: inset -18px -18px 100px #e8e8e8,
+            inset 18px 18px 100px #ffffff;
 }
 
-.location
-.store {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    margin-left: 7px;
+.menu-txt {
+    width: 200px;
+    text-align: center;
+    font-size: 2.4rem;
+
 }
+
+.menu-container
+.options {
+    padding: 16px 32px;
+}
+
